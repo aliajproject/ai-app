@@ -1,0 +1,122 @@
+{
+  "bot_name": "Shopping Chat",
+  "description": "Sənin şəxsi alış-veriş köməkçin. Moda, elektronika, aksesuar və ev əşyası haqqında məlumat verir, təkliflər göstərir və endirimləri bildirir.",
+  "welcome_message": "Salam! 👋 Mən Shopping Chat — sənin şəxsi alış-veriş köməkçinəm. Nə axtarırsan, mən tapım! 😊",
+  "categories": [
+    "Moda və geyim",
+    "Ayaqqabılar",
+    "Elektronika",
+    "Gözəllik və baxım",
+    "Ev və mətbəx",
+    "Uşaq və oyuncaqlar"
+  ],
+  "dialogs": [
+    {
+      "id": 1,
+      "user": "Qadın üçün payız gödəkçəsi axtarıram.",
+      "bot": {
+        "text": "Əla seçimdir! 🍁 Budur bir neçə trend payız gödəkçəsi:",
+        "products": [
+          {
+            "name": "Oversize dəri gödəkçə",
+            "price": 129,
+            "currency": "AZN",
+            "discount": 20,
+            "image": "https://example.com/images/jacket1.jpg"
+          },
+          {
+            "name": "Bej rəngli trench coat",
+            "price": 159,
+            "currency": "AZN",
+            "discount": 15,
+            "image": "https://example.com/images/jacket2.jpg"
+          },
+          {
+            "name": "Qısa bomber gödəkçə",
+            "price": 99,
+            "currency": "AZN",
+            "discount": 10,
+            "image": "https://example.com/images/jacket3.jpg"
+          }
+        ],
+        "next_question": "İstəyirsən yalnız endirimdə olanları göstərim, yoxsa rəngə görə filtr edim?"
+      }
+    },
+    {
+      "id": 2,
+      "user": "Kişi ağ idman ayaqqabısı axtarıram.",
+      "bot": {
+        "text": "Tamam! 👟 Budur ağ rəngdə kişilər üçün ən çox satılan modellər:",
+        "products": [
+          {
+            "name": "Nike Air Zoom Alpha",
+            "price": 229,
+            "currency": "AZN",
+            "discount": 10,
+            "image": "https://example.com/images/nike1.jpg"
+          },
+          {
+            "name": "Adidas Lite Racer 2.0",
+            "price": 189,
+            "currency": "AZN",
+            "discount": 25,
+            "image": "https://example.com/images/adidas1.jpg"
+          },
+          {
+            "name": "Puma Runner Evo",
+            "price": 159,
+            "currency": "AZN",
+            "discount": 20,
+            "image": "https://example.com/images/puma1.jpg"
+          }
+        ],
+        "next_question": "Bunlardan hansını daha ətraflı görmək istəyirsən?"
+      }
+    },
+    {
+      "id": 3,
+      "user": "Telefon axtarıram, büdcəm 1000 AZN.",
+      "bot": {
+        "text": "Sənin üçün bu büdcəyə uyğun modellər tapdım:",
+        "products": [
+          {
+            "name": "Xiaomi Redmi Note 13 Pro",
+            "price": 949,
+            "currency": "AZN",
+            "discount": 5,
+            "image": "https://example.com/images/xiaomi.jpg"
+          },
+          {
+            "name": "Samsung Galaxy A15",
+            "price": 899,
+            "currency": "AZN",
+            "discount": 10,
+            "image": "https://example.com/images/samsung.jpg"
+          },
+          {
+            "name": "Realme 12 Lite",
+            "price": 859,
+            "currency": "AZN",
+            "discount": 12,
+            "image": "https://example.com/images/realme.jpg"
+          }
+        ],
+        "next_question": "İstəyirsən bu modellərin kamera və batareya müqayisəsini göstərim?"
+      }
+    },
+    {
+      "id": 4,
+      "user": "Endirimlər hansılardır?",
+      "bot": {
+        "text": "Hazırda bu kateqoriyalarda endirimlər var 🎉",
+        "discounts": [
+          { "category": "Moda və geyim", "percent": 40 },
+          { "category": "Gözəllik məhsulları", "percent": 30 },
+          { "category": "Uşaq malları", "percent": 25 },
+          { "category": "Elektronika", "percent": 15 }
+        ],
+        "next_question": "İstəyirsən Moda bölməsindən başlayaq?"
+      }
+    }
+  ]
+}
